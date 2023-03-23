@@ -1,0 +1,164 @@
+
+/* start banner section rules */
+
+.banner {
+  background: url(../img/banner/banner.png);
+  background-size: cover;
+  height: 900px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+@media (max-width: 991px) {
+  .banner {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner {
+    height: 500px;
+  }
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url(../img/banner/Subtraction\ 2.png);
+  background-size: cover;
+  width: 531px;
+  height: 504px;
+}
+
+.banner::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: url(../img/banner/man.png);
+  background-size: cover;
+  width: 724px;
+  height: 767px;
+}
+
+@media (max-width: 991px) {
+  .banner::before {
+    width: 320px !important;
+    height: 320px !important;
+  }
+
+  .banner::after {
+    width: 370px !important;
+    height: 370px !important;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .banner::before {
+    display: none;
+  }
+
+  .banner::after {
+    width: 314px !important;
+    height: 300px !important;
+  }
+}
+
+.banner .grid {
+  position: absolute;
+  bottom: 0;
+  right: 20%;
+}
+
+@media (max-width: 991px) {
+  .banner .grid {
+    display: none;
+  }
+}
+
+.banner .social {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+  right: 9%;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media (max-width: 767px) {
+  .banner .social {
+    display: none;
+  }
+}
+
+.banner .social li {
+  width: 40px;
+  height: 40px;
+}
+
+.banner .social a {
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(255, 255, 255, .1);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .social a:hover {
+  background: linear-gradient(to bottom, #615cfd 0%, #d465ef 100%);
+}
+
+.banner .social i {
+  font-size: 14px;
+}
+
+.banner .content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 15;
+  width: 100%;
+  text-align: center;
+}
+
+.banner .content h3 {
+  font-size: 45px;
+  color: #fff;
+  margin: 0 0 9px;
+  letter-spacing: 3px;
+  line-height: 55px;
+  font-weight: 600;
+}
+
+@media (max-width: 991px) {
+  .banner .content h3 {
+    font-size: 30px;
+  }
+}
+
+.banner .content span {
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+}
+
+.banner .content span::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -70px;
+}
+
+/* end banner section rules */

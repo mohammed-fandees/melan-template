@@ -1,0 +1,39 @@
+.project-area {
+  padding-bottom: 150px;
+}
+
+@media (max-width: 767px) {
+  .project-area {
+    padding-bottom: 50px;
+  }
+}
+
+.project-area .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.project-area .text {
+  padding-left: 68px;
+}
+
+@media (max-width: 767px) {
+  .project-area .text {
+    padding: 0;
+  }
+}
+
+.project-area .text h3 {
+  font-size: 30px;
+  margin: 0;
+  height: 62px;
+  line-height: 62px;
+  color: #001d38;
+}
+
+.project-area .text p {
+  font-size: 15px;
+  color: #4d4d4d;
+  margin: 10px 0 20px;
+  line-height: 28px;
+}
